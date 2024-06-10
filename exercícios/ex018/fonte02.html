@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url('fonts/love story ttf.ttf') format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+          /*
+             Sites para baixar fontes 
+             google fonts
+             dafont
+
+
+---------------------------------------------------------------------------
+             Fontes com o Gloogle Fonts
+
+             1° Entrar no site google fonts e copiar o @import da letra escolhida
+
+             <style>
+               @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+-----------------------------------------------------------------------------------
+             Fontes Externas 
+
+             1° Baixar fonte ttf ou otf
+             2° Extrair fonte na pasta do site
+             3° Usar regra 
+             @font-face {
+                font-family; 'Love';
+                src: url('fonts/love story ttf.ttf') format(truetype);}
+ 
+             Tipos de format ()
+             - opentype (otf)
+             - truetype (ttf)
+             - embedded-opentype
+             - truetype-aat (Apple Advanced Typography)
+             - svf
+------------------------------------------------------------------------------
+             Detectar fontes usadas em um site
+             Usar extenção; fonts ninja
+
+
+             Detectar fonte de imagens
+             sites; Whatfontis.com, fontsquirrel.com, myfonts.com
+           */
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iure nam non temporibus! Repellat ad possimus earum labore perferendis, placeat vel culpa rem dolore reiciendis aperiam quisquam dolorem velit ea!</p>
+</body>
+</html>
