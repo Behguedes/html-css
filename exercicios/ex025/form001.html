@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<!--
+    Label muito importante 
+    Label for - é relacionado com o id
+
+    Os cadastros vão para o script escolhido 
+    ex: <form action="cadastro.php"> </form>
+
+    autocomplete="off" desativa prenchimento automatico do nome
+
+    Method Get e Post
+    Get = Dados simples (Não podem ultrapassar 3000 letras(bits), Mostra os dados na url)
+    Post = Dados sensíveis (Dados com mais de 3000 letras(bits), envios de arquivos, Não mostra os dados na url)
+    Https = Proteger dados (Cartões de credito e senhas)
+-->
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
