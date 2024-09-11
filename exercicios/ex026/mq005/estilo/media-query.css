@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+* {
+
+}
+
+/* 
+Pequenas telas: de 481px até 767px
+Celular: de 576px até 768px
+Tablet pequenos: 768px até 991px
+Notbooks e tablets grandes: 992px até 1199px
+Desktop: de 1200px a 1919px
+Telas extragrandes: de 1920px e superior */
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
