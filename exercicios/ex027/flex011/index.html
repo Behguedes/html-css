@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: salmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: aqua;
+            border: 1px solid;
+            text-align: center;
+            flex-basis: 200px;
+            
+        }
+
+        div#cxA {
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        
+        div#cxB {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#cxC {
+            flex-shrink: 8;
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<!--QUEM É O PAI?
+    O pai leva a config > display: flex;-->
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>
